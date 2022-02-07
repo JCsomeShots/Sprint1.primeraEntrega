@@ -1,0 +1,210 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1200px;
+  margin: 20px;
+}
+div, article {
+  height: 10px;
+}
+      /* ********** media max 400px******** */
+      @media(max-width: 400px){
+        div , article {
+          height: 15px;
+        }
+      }
+
+
+/* ++++++++++++header+++++++++++++ */
+header{
+  border: 7px solid rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 10px;
+}
+      /* ********** media max 400px******** */
+      @media(max-width: 400px){
+        header {
+          border-width: 15px;
+        }
+      }
+
+
+
+
+/* ++++++++++++primeraCabecera+++++++++++++ */
+
+.primeraCabecera {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f64e15;
+  padding: 5px;
+  border-bottom: 4px solid black;
+}
+.primeraCabecera > div {
+  background-color: #9c2748;
+  width: 17%;
+}
+.primeraCabecera :nth-child(2){
+  width: 63%;
+}
+      /* ********** media max 400px******** */
+      @media(max-width: 400px){
+        .primeraCabecera  {
+          display: block;
+          padding: 10px 20px 7px;
+          border-bottom-width: 15px;
+        }
+        .primeraCabecera > div   {
+          width: 100%;
+          margin-bottom: 8px;
+        }
+        .primeraCabecera :last-child{
+          margin-bottom: 4px;
+        }
+        .primeraCabecera :nth-child(2)   {
+          width: 100%;
+        }
+      }
+
+
+
+/* ++++++++++++segundaCabecera+++++++++++++ */
+.segundaCabecera {
+  background-color: #900c3f; 
+  padding: 5px;
+}
+.segundaCabecera  div {
+  background-color: coral; 
+  height: 6px;
+}
+      /* ********** media max 400px******** */
+      @media(max-width: 400px){
+        .segundaCabecera  {
+          padding: 10px 20px;
+        }
+        .segundaCabecera > div {
+          height: 15px;
+        }
+      }
+
+
+
+/* +++++++++++++++++main+++++++++++ */
+main{
+  border: 7px solid rgb(0, 0, 0);
+  text-align: center;
+  display: flex;
+  justify-content: space-between; 
+  margin-bottom: 10px;
+}
+      /* ********** media min 400px******** */
+      @media(max-width: 400px){
+        main{
+          border-width: 15px;
+        }
+      }
+      /* ********** media min 700px******** */
+      @media(max-width: 700px){
+        main{
+          display: block;
+          border-color:  #acb9a9;
+        }
+      }
+    
+
+      
+/* +++++++++++++++++main section+++++++++++ */
+main > section {
+  padding: 5px;
+  background-color: #174a4d;
+  border-right: 7px solid black;
+  display: flex;
+  flex: 2;
+  flex-wrap: wrap;
+}
+      
+main > section > article {
+  background-color: coral;
+  margin: 0px 5px 5px 0px;
+  flex: 1 40%
+}
+     
+.last {
+  background-color: #698020;
+  flex: 1 100%;
+}
+      /* ********** media max 400px******** */
+      @media(max-width: 400px){
+        main section{
+          padding: 10px 20px;
+          border-bottom: 15px solid #acb9a9;
+        }
+        main > section > article  {
+          margin-bottom: 8px;
+          flex: 1 100%;
+        }
+        main > section :last-child {
+          margin-bottom: 4px;
+        }
+      }
+      /* ********** media max 700px******** */
+      @media(max-width: 700px){
+        main section{
+          border-right: none;
+          
+        }
+      }
+
+ 
+
+/* +++++++++++++++++main aside+++++++++++ */
+main > aside{
+  padding: 5px 10px;
+  background-color: #519548;
+  flex: 1;
+}
+main > aside > div {
+  background: #b3e810;
+  margin-bottom: 5px;
+}
+ 
+      /* ********** media max 400px******** */
+      @media(max-width: 400px){
+        main > aside {
+          padding: 10px 20px;
+        }
+        main > aside > div {
+          margin-bottom: 8px;
+        }
+        main > aside :last-child{
+          margin-bottom: 4px;
+        }
+      }
+      /* ********** media max 700px******** */
+      @media(max-width: 700px){
+        main > aside {
+          padding-top: 10px;
+          border-top: 7px solid #acb9a9;
+        }
+      }
+
+
+
+/* *************footer*********** */
+footer{
+  border: 7px solid rgb(0, 0, 0);
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  background:  coral;
+  ;
+}
+        /* ********** media max 400px******** */
+        @media(max-width: 400px){
+          footer {
+            border-width: 15px;
+          }
+        }

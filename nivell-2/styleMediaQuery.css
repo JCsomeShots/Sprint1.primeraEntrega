@@ -1,0 +1,108 @@
+/* +++++++++++media 700++++++++ */
+
+@media(min-width: 700px){
+
+
+  /* ********header .cabecera**** */
+  header .desplegar{
+    height: initial;
+    position: initial;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+  }
+  header img {
+    width: 50px;
+  }
+  
+  header .social {
+    display: flex;
+  }
+  header .no-social {
+    display: none;
+  }
+  header .fa-times ,  header .fa-bars{
+    display: none;
+  }
+  header ul {
+    display: flex;
+  }
+  header a, header .fa {
+    font-size: 14px;
+  }
+  header .social{
+    display: flex;
+  }
+  header a, header i{
+    color: black;
+    opacity: 0.5;
+  }
+/* ----fin -----header.cabecera----- */
+
+
+
+/* **************header .titulo ***************** */
+  header h1 {
+    font-size: 1.5rem;
+    color: yellow;
+  }
+/* -----fin ----header.titulo----- */
+
+
+
+
+
+/* ***************.cuerpo*********** */
+  .cuerpo {
+    background-color: rgb(187, 178, 180);
+  }
+  .cuerpo .articulos {
+    padding: 7px;
+  }
+  .cuerpo .articulos .texto {
+    display: flex;
+    justify-content: center;
+    padding:  10px 0px 0px;
+  }
+  .cuerpo .articulos .texto p {
+    width: 49%;
+    margin: 0px 6px;
+  }
+
+  .cuerpo .articulos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .cuerpo .articulos article {
+    width: 49%;
+  }
+  article > .leer {
+    color: black;
+  }
+  .pie {
+    text-align: center;
+    padding: 0px 10px 15px;
+  }
+}
+/* ----------- fin .cuerpo------------- */
+/* --------------fin media --------- */
+
+/* +++++++++++media 900++++++++ */
+/* ************cuerpo******* */
+@media (min-width: 900px){
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cuerpo {
+    width: 79%;
+  }
+  aside {
+    width: 20%;
+    margin-top: 0px;
+  }
+}
+/* ----------- fin cuerpo---------- */

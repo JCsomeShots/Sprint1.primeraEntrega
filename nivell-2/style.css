@@ -1,0 +1,207 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  margin: auto;
+  width: 90%;
+}
+
+/* **************header***************** */
+header {
+  background: url(img/header.jpg) no-repeat center;
+  background-size: cover;
+}
+
+
+/* **************header .cabecera ***************** */
+header .cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  
+}
+header img {
+  width: 30px;
+}
+
+header #chk {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+header span{
+  position: relative;
+}
+header .desplegar {
+  position: fixed;
+  width: 30%;
+  height: 220px;
+  top: 0px;
+  right: -100%;
+}
+header .social {
+  display: none;
+}
+
+#chk:checked + .desplegar {
+  right: 0px;
+  transition: 1s;
+}
+#chk:not(:checked) + .desplegar {
+  transition: 2s;
+}
+.fa-times {
+  position: absolute;
+  color: rgba(112, 112, 112, 0.5);
+  top: 10px;
+  right: -80px;
+}
+
+header ul {
+  margin: auto;
+}
+header li {
+  cursor: pointer;
+  list-style: none;
+  margin-right: 60px;
+  font-size: 9px;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  padding-left: 15px;
+}
+
+    /* +++++++++++hover++++++++ */
+    header a:hover , i:hover{
+      transition: .2s;
+      text-decoration: line-through;
+      color: black;
+    }
+    header i:hover{
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+header .social {
+  color: white;
+  padding-left: 20px;
+}
+header .i{
+font-size: 12px;
+}
+header .fa-facebook-square {
+  margin-right: 7px;
+}
+/* ----fin -----header.cabecera----- */
+
+
+
+/* **************header .titulo ***************** */
+header .titulo {
+  text-align: center;
+  background: rgba(204, 204, 204, 0.9);
+  width: 80%;
+  margin: 150px auto 20px;
+  opacity: 0.5;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1{
+  color: rgb(223, 160, 45);
+  opacity: 0.9;
+  font-size: 15px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+/* -----fin ----header.titulo----- */
+
+
+
+
+
+/* ***************.cuerpo*********** */
+article{
+  margin-bottom: 20px;
+}
+article img{
+  width: 100%;
+}
+.articulos .texto {
+  padding: 10px;
+}
+.articulos article{
+  background-color: rgb(216, 213, 213);
+  padding: 7px;
+}
+.articulos .texto p:first-child {
+  margin-bottom: 10px;
+}
+
+      
+article figcaption {
+  color: yellow;
+  font-size: 8px;
+  position: relative;
+  top: -20px;
+  left: 10px;
+}
+article div h2 {
+  background-color: rgb(240, 128, 128);
+  padding: 5px;
+  margin-bottom: 5px;
+  
+}
+article div h2 {
+  color: white;
+}
+article > .leer {
+  margin: 20px auto;
+  font-size: 10px;
+  color: rgb(29, 27, 27);
+  font-style: italic;
+  cursor: pointer;
+}
+    article > .leer:hover {
+      animation: shake 0.5s;
+      animation-iteration-count:initial;
+    }
+.pie {
+  padding: 7px;
+  margin-top: 7px;
+}
+/* ----------- fin .cuerpo------------- */
+
+
+/* *******aside********** */
+aside {
+  background-color: rgb(202, 202, 202);
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 30px;
+}
+aside p {
+  margin-top: 20px;
+}
+
+/* -------- fin aside----------- */
+
+
+
+
+
+/* *********footer********** */
+footer{
+  text-align: center;
+  margin: 10px auto 30px;
+}
+footer p {
+  padding: 7px;
+  background-color: rgb(244, 241, 241);
+}
